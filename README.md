@@ -1,2 +1,2 @@
 # ecommerce_website
- learning
+ ecommerce website using frontend for revising the concepts 
