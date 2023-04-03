@@ -16,7 +16,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Global Styles */
 
 h1 {
   font-size: 50px;
@@ -87,6 +86,11 @@ body {
 #navbar li a:hover {
   color: aqua;
   text-decoration: 3px underline;
+}
+#mobile{
+ display: none; 
+ align-items: center;
+
 }
 #main {
   background-image: url(pp.jpg);
@@ -215,22 +219,22 @@ body {
   flex-wrap: wrap;
   gap: 20px;
 }
-.explore_button{
+.explore_button {
   font-size: 14px;
-font-weight: 800;
-padding: 15px 30px;
-color: #161515;
-background-color: #5dbea3;
-border-radius: 4px;
-cursor: pointer;
-border: none;
-outline: none;
-transition: 0.2s;
+  font-weight: 800;
+  padding: 15px 30px;
+  color: #161515;
+  background-color: #5dbea3;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
 }
-#explore button:hover{
+#explore button:hover {
   background-color: deeppink;
 }
-#explore{
+#explore {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -241,18 +245,163 @@ transition: 0.2s;
   height: 40vh;
   background-size: cover;
   background-position: center;
-
 }
-#explore h4{
+#explore h4 {
   color: #161515;
   font-size: 20px;
-
 }
-#explore h2{
+#explore h2 {
   color: #1b1919;
   font-size: 30px;
   padding: 10px 0;
 }
-#explore h2 span{
+#explore h2 span {
   color: #a51919;
+}
+
+#offer-banner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+#offer-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(offerbanner/ob3.jpg);
+  min-width: 580px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+#offer-banner {
+  font-size: 20px;
+  font-weight: 200;
+}
+#offer-banner .banner-box:hover button {
+  background-color: lightcoral;
+}
+
+.learnmore {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #161515;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #a51919;
+  outline: none;
+  transition: 0.2s;
+}
+#offer-banner .imagebanner {
+  background-image: url(offerbanner/ob2.jpg);
+}
+#messagesection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(offerbanner/b1new.webp);
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #041e42;
+}
+#messagesection h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffff;
+}
+#messagesection p {
+  font-size: 20px;
+  font-weight: 900;
+  color: #d25212;
+}
+#messagesection input {
+  height: 4rem;
+  padding: 0 1.25rem;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#messagesection button {
+  background-color: #088178;
+  color: #fff;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#messagesection .Textform {
+  display: flex;
+  width: 40%;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+footer a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #161515;
+  margin-bottom: 10px;
+}
+footer .follow {
+  margin-top: 20px;
+}
+@media (max-width:799px) {
+  #navbar {
+    display: flex;
+  flex-direction: column;
+    align-items: flex-start;
+ justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+  
+  }
+  #navbar .active{
+    right: 0px;
+  }
+  #navbar li{
+    margin-bottom:25px  ;
+  }
+  #mobile{
+    display: flex; 
+    align-items: center;
+   
+   }
+   #mobile i{
+   color: #161515;
+   font-size: 24px;
+   padding-left: 20px;
+   
+   }
 }
